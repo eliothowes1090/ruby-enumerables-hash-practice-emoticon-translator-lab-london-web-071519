@@ -22,7 +22,8 @@ def get_japanese_emoticon(yaml, emoticon)
   ordered_library = load_library(yaml)
   ordered_library.each_key do |dict|
     if dict == "get_emoticon"
-      dict.each do |japanese, english|
+      dict.each do |english|
+binding.pry
       end
     end
   end
