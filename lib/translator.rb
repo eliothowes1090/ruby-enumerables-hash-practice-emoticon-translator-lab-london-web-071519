@@ -25,7 +25,8 @@ def get_japanese_emoticon(yaml, emoticon)
       emoticons.each do |english, japanese|
         if emoticon == english
           return japanese
-        end "Sorry, that emoticon was not found"
+        end
+        "Sorry, that emoticon was not found"
       end
     end
   end
