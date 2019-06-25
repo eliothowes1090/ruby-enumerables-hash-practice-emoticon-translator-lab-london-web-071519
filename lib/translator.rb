@@ -41,6 +41,8 @@ def get_english_meaning(yaml, emoticon)
 
   ordered_library.each do |dict, emoticons|
     emoticons.each do |japanese, meaning|
+      binding.pry
+    end
   end
 
 end
