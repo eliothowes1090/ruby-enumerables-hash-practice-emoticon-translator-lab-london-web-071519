@@ -24,7 +24,7 @@ def get_japanese_emoticon(yaml, emoticon)
     if dict == "get_emoticon"
       emoticons.each do |english, japanese|
         if emoticon == english
-          japanese
+          return japanese
         else
           "Sorry, that emoticon was not found"
         end
