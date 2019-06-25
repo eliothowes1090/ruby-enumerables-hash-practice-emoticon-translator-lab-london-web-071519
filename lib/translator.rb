@@ -39,7 +39,7 @@ def get_english_meaning(yaml, emoticon)
   # code goes here
   ordered_library = load_library(yaml)
 
-  get_meaning.each do |dict, emoticons|
+  ordered_library.each do |dict, emoticons|
     binding.pry
   end
 
