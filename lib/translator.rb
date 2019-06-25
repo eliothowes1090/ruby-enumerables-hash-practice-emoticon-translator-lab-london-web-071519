@@ -39,10 +39,14 @@ def get_english_meaning(yaml, emoticon)
   # code goes here
   ordered_library = load_library(yaml)
 
-  ordered_library.each do |dict, emoticons|
-    emoticons.each do |japanese, meaning|
-      binding.pry
+    ordered_library.each do |dict, emoticons|
+      emoticons.each do |japanese, meaning|
+        if emoticon == japanese
+          return meaning
+        end
+      end
     end
-  end
+
+  "Sorry, that emoticon was not found"
 
 end
