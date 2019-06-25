@@ -20,6 +20,7 @@ end
 def get_japanese_emoticon(yaml, emoticon)
   # code goes here
   ordered_library = load_library(yaml)
+
   ordered_library.each do |dict, emoticons|
     if dict == "get_emoticon"
       emoticons.each do |english, japanese|
@@ -29,9 +30,12 @@ def get_japanese_emoticon(yaml, emoticon)
       end
     end
   end
-    "Sorry, that emoticon was not found"
+
+"Sorry, that emoticon was not found"
+
 end
 
-def get_english_meaning
+def get_english_meaning(yaml, emoticon)
   # code goes here
+  ordered_library = load_library(yaml)
 end
