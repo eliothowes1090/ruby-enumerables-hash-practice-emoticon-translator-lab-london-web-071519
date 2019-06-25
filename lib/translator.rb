@@ -41,5 +41,6 @@ def get_english_meaning(yaml, emoticon)
 
   get_meaning.each do |dict, emoticons|
     binding.pry
+  end
 
 end
