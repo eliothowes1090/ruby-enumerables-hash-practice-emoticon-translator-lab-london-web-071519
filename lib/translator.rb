@@ -41,5 +41,5 @@ def get_english_meaning(yaml, emoticon)
 
   binding.pry
 
-  
+
 end
